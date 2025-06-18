@@ -1,28 +1,33 @@
 package org.example;
 
 public class Books {
- public String Title ;
- public String Author;
+    protected String id;
+    protected String Title;
+   protected String Author;
 
-  public book (String  Title , String Author )
-  {
-      this.Title = Title;
-      this.Author = Author;
-  }
-
-
-  public class fictionbook extends book
-  {
-      public  fictionbook(String Title, String Author)
-      {
-         super(Title, Author);
-      }
-
-
+    public Books(String Title, String Author, String author) {
+        this.id= id;
+        this.Title = Title;
+        this.Author = Author;
     }
 
+    public String getid() {
+        return id;
+    }
 
+    public String getAuthor() {
+        return Author;
+    }
 
+    public String getTitle() {
+        return Title;
+    }
 }
+
+
+
+
+
+
 
 
